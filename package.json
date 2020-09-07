@@ -4,7 +4,6 @@
   "description": "CypressIO demo with Wordpress Admin.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open"
   },
   "keywords": [
@@ -15,6 +14,6 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "cypress": "^3.1.0"
+    "cypress": "5.1.0"
   }
 }
