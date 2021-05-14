@@ -4,7 +4,8 @@
   "description": "CypressIO demo with Wordpress Admin.",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:visual": "docker run --rm -it -v $PWD:/e2e -w /e2e cypress/included:7.3.0 --browser chrome --config baseUrl=https://host.docker.internal:8080"
   },
   "keywords": [
     "cypress",
@@ -14,6 +15,8 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "cypress": "5.1.0"
+    "cypress": "7.3.0",
+    "cypress-image-snapshot": "^4.0.1",
+    "cypress-sql-server": "^1.0.0"
   }
 }

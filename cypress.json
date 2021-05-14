@@ -1,3 +1,13 @@
 {
-    "baseUrl": "http://localhost:8888"
+    "baseUrl": "http://localhost:8888",
+    "db": {
+        "userName": "",
+        "password": "",
+        "server": "",
+        "options": {
+            "database": "",
+            "encrypt": true,
+            "rowCollectionOnRequestCompletion" : true
+        }
+    }
 }
