@@ -1,11 +1,12 @@
 {
-  "name": "cypress-wp-demo",
+  "name": "cypress-demo",
   "version": "1.0.0",
-  "description": "CypressIO demo with Wordpress Admin.",
+  "description": "CypressIO demo with Sauce Demo.",
   "main": "index.js",
   "scripts": {
+    "cy:ci": "cypress run",
     "cy:open": "cypress open",
-    "cy:visual": "docker run --rm -it -v $PWD:/e2e -w /e2e cypress/included:7.3.0 --browser chrome --config baseUrl=https://host.docker.internal:8080"
+    "style": "prettier . --write"
   },
   "keywords": [
     "cypress",
@@ -13,10 +14,20 @@
   ],
   "author": "Sergiu Bacanu",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "cypress": "^14.1.0",
+    "eslint-plugin-cypress": "^4.1.0",
+    "prettier": "^3.5.1",
+    "typescript": "^5.7.3"
+  },
   "devDependencies": {
-    "cypress": "7.3.0",
-    "cypress-image-snapshot": "^4.0.1",
-    "cypress-sql-server": "^1.0.0"
+    "@eslint/js": "^9.20.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.5",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.15.0",
+    "typescript-eslint": "^8.24.1"
   }
 }
