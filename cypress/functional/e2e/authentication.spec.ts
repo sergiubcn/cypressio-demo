@@ -1,6 +1,6 @@
-import { header } from "../functional/page-component-objects/header";
-import { loginPage } from "../functional/page-component-objects/login-page";
-import { lockedOutUser, validUser } from "../data/user-data";
+import { header } from "../page-component-objects/header";
+import { loginPage } from "../page-component-objects/login-page";
+import { lockedOutUser, validUser } from "../../data/user-data";
 
 describe("Authentication", () => {
   it("Should allow the user to log in", () => {

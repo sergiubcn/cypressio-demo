@@ -1,8 +1,8 @@
-import { header } from "../functional/page-component-objects/header";
-import { inventoryPage } from "../functional/page-component-objects/inventory-page";
-import { loginPage } from "../functional/page-component-objects/login-page";
-import { validItemName } from "../data/item-data";
-import { validUser } from "../data/user-data";
+import { header } from "../page-component-objects/header";
+import { inventoryPage } from "../page-component-objects/inventory-page";
+import { loginPage } from "../page-component-objects/login-page";
+import { validItemName } from "../../data/item-data";
+import { validUser } from "../../data/user-data";
 
 describe("Inventory actions", () => {
   before(() => {

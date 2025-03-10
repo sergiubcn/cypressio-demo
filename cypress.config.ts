@@ -9,7 +9,7 @@ export default defineConfig({
     baseUrl: "https://www.saucedemo.com",
     // Enable this in CI only.
     // reporter: 'cypress-mochawesome-reporter',
-    specPattern: "cypress/e2e/*.spec.ts",
+    specPattern: "cypress/**/e2e/*.spec.ts",
     viewportWidth: 1280,
   },
 });
