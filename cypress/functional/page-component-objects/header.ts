@@ -4,6 +4,7 @@ const headerElements: UIElements = {
   cartBadge: () => cy.get("[data-test=shopping-cart-badge]"),
   cartLink: () => cy.get("[data-test=shopping-cart-link]"),
   headerContainer: () => cy.get("[data-test=header-container]"),
+  menuButton: () => cy.get("#react-burger-menu-btn"),
 };
 
 export const header = () => ({
@@ -19,4 +20,10 @@ export const header = () => ({
    */
   getCartLinkFromHeader: () =>
     headerElements.headerContainer().within(() => headerElements.cartLink()),
+  /**
+   * Opens the sidebar navigation menu.
+   */
+  openSidebarNav: () => {
+    headerElements.headerContainer().within(() => headerElements.menuButton().click());
+  },
 });

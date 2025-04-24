@@ -3,6 +3,7 @@ import { UIElements } from "../../types";
 const loginPageElements: UIElements = {
   errorMessageContainer: () => cy.get("[data-test=error]"),
   loginButton: () => cy.get("[data-test=login-button]"),
+  loginForm: () => cy.get("[data-test=login-container]"),
   passwordTextField: () => cy.get("[data-test=password]"),
   usernameTextField: () => cy.get("[data-test=username]"),
 };
@@ -13,6 +14,11 @@ export const loginPage = () => ({
    * @returns The error message container element.
    */
   getErrorMessageContainer: () => loginPageElements.errorMessageContainer(),
+  /**
+   * Retrieves the login form element.
+   * @returns The login form element.
+   */
+  getLoginForm: () => loginPageElements.loginForm(),
   /**
    * Loads the root page. If the user is unauthenticated this is the Login page.
    */
