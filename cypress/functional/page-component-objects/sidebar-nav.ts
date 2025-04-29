@@ -10,6 +10,8 @@ export const sidebarNav = () => ({
    * Logs the user out.
    */
   logout: () => {
-    sidebarNavElements.sidebarNavContainer().within(() => sidebarNavElements.logoutLink().click());
+    sidebarNavElements
+      .sidebarNavContainer()
+      .within(() => sidebarNavElements.logoutLink().click());
   },
 });

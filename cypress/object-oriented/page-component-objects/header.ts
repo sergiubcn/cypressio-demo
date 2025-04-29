@@ -14,4 +14,11 @@ export default class Header {
   getCartLinkFromHeader() {
     return cy.get(this.headerContainer).within(() => cy.get(this.cartLink));
   }
+
+  /**
+   * Navigates to the cart page by selecting the cart link from the header.
+   */
+  loadCart() {
+    cy.get(this.cartLink).click();
+  }
 }

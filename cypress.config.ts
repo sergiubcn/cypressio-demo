@@ -11,5 +11,6 @@ export default defineConfig({
     // reporter: 'cypress-mochawesome-reporter',
     specPattern: "cypress/**/e2e/*.spec.ts",
     viewportWidth: 1280,
+    experimentalStudio: true,
   },
 });

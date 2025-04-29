@@ -24,6 +24,8 @@ export const header = () => ({
    * Opens the sidebar navigation menu.
    */
   openSidebarNav: () => {
-    headerElements.headerContainer().within(() => headerElements.menuButton().click());
+    headerElements
+      .headerContainer()
+      .within(() => headerElements.menuButton().click());
   },
 });
